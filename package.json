@@ -1,0 +1,14 @@
+{
+  "name": "energtechweb",
+  "private": true,
+  "scripts": {
+    "develop": "gridsome develop",
+    "explore": "gridsome explore",
+    "build": "gridsome build"
+  },
+  "dependencies": {
+    "gridsome": "^0.7.0",
+    "normalize.css": "^8.0.1",
+    "vue-carousel": "^0.18.0"
+  }
+}
