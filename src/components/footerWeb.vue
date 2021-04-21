@@ -76,7 +76,7 @@ color: #f7f7f7;
 }
 
 .footer__title {
-grid-column: 1;
+grid-column: 1 / span 2;
   grid-row: 1;
   align-self: start;
   justify-self: start;

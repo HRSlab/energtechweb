@@ -6,5 +6,11 @@
 
 module.exports = {
   siteName: 'Energ-Tech',
-  plugins: []
+  siteDescription: 'Website',
+  siteUrl: 'https://www.gridsome.org',
+  plugins: [ ],
+  icon: {
+    favicon: '../assets/favicon/favicon.ico',
+    touchicon: '../assets/favicon/apple-touch-icon.png'
+  }
 }

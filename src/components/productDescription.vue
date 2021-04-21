@@ -29,7 +29,7 @@ export default {
 .product__container {
   display: grid;
   grid-template-columns: repeat(8, 1fr [col-start]);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   position: relative;
   max-width: 80vw;
   margin: 0 auto;
@@ -75,14 +75,14 @@ grid-column: 1;
 
 .placeholder {
   grid-column: 2 / span 7;
-  grid-row: 1/ span 4;
+  grid-row: 1 / 3;
   justify-self: end;
 }
 
 
 .product__description {
 grid-column: 1;
-grid-row: 2 / 4;
+grid-row: 2;
 align-self: end;
 justify-self: end;
   font-size: 0.875rem;

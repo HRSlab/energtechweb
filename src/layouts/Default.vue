@@ -1,10 +1,10 @@
 <template>
   <div class="layout">
     <header class="header">
+    <stripesTop />
       <mainNav />
       <secondNav />
     </header>
-    <carouselMain />
     <slot> </slot>
   <footer class="footer">
     <footerWeb />
@@ -23,11 +23,11 @@ query {
 <script>
 import mainNav from "../components/mainNav.vue";
 import secondNav from "../components/secondNav.vue";
-import carouselMain from "../components/carouselMain.vue";
 import footerWeb from "../components/footerWeb.vue";
+import stripesTop from "../components/stripesTop.vue"
 
 export default {
-  components: { mainNav, secondNav, carouselMain, footerWeb },
+  components: { mainNav, secondNav, footerWeb, stripesTop },
 };
 </script>
 
@@ -36,6 +36,8 @@ export default {
   max-width: 100vw;
   overflow: hidden;
 }
+
+
 
 .footer {
   position: relative;

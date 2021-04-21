@@ -5,17 +5,26 @@
 </svg>
       <div class="info__wrapper">
         <h4 class="info__title">Other Info Title</h4>
-        <p class="info__subtitle">Other Info Subtitle</p>
+        <p class="info__subtitle">Other Info Subtitle </p>
       </div>
-      <p class="info__description">
-     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-      </p>
+      <p class="info__description"> Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
     </section>
 </template>
 
 <script>
 export default {
-  name: "otherInfo"
+  name: "otherInfo",
+  data () {
+    return {
+      info: [
+        {
+        title: "Other Info Title",
+        subtitle: "Other Info Subtitle ",
+        description: " Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+        }
+        ]
+    }
+  },
 
 };
 </script>

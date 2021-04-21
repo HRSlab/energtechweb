@@ -1,14 +1,12 @@
-# Default starter for Gridsome
+# Developement Details
 
-This is the project you get when you run `gridsome create new-project`.
+# Daily Conding Hours
 
-### 1. Install Gridsome CLI tool if you don't have
+![CodTime](https://img.shields.io/badge/dynamic/json?color=informational&label=Ore%20di%20Programmazione&query=%24.data%5B5%5D.grand_total.text&url=https%3A%2F%2Fwakatime.com%2Fshare%2F%40HRSlab%2Fbf231007-0255-4824-9490-b836eca49a51.json)
+
+### 1. Install Gridsome CLI tool
 
 `npm install --global @gridsome/cli`
 
 ### 2. Create a Gridsome project
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌

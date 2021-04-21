@@ -3,8 +3,8 @@
     <g-image class="nav__logo" src="../assets/img/logo.png" width="250" />
     <nav class="main__nav">
       <g-link id="nav__link" to="/">Home</g-link>
-      <g-link id="nav__link" to="/about/">Servizi</g-link>
-      <g-link id="nav__link" to="/about/">Azienda</g-link>
+      <g-link id="nav__link" to="/Blank/">Servizi</g-link>
+      <g-link id="nav__link" to="/Company/">Azienda</g-link>
     </nav>
     <div class="contacts">
       <a class="nav__contact" href="mailto:info@energ-tech.it"
@@ -23,14 +23,16 @@ export default {
 
 <style>
 
+
 .nav__container {
   display: grid;
   grid-template-columns: auto 50% auto;
   grid-template-areas: "logo menu contact";
   background-color: transparent;
-  height: 80px;
-  max-width: 80vw;
-  padding: 20px;
+  max-width: 90vw;
+  padding: 0 40px;
+  height: 100px;
+  margin: 2% auto;
   align-items: center;
   z-index: 1000;
   position: relative;
@@ -63,7 +65,7 @@ export default {
 #nav__link:hover::before {
   content: " ";
   position: absolute;
-  margin-left: -4px;
+  margin-left: -6px;
   height: 20px;
   border-left: 2px solid var(--color-accent);
   cursor: pointer;
