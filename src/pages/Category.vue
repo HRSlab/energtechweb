@@ -1,25 +1,6 @@
 <template>
   <Layout>
-      <div class="carousel__container">
-    <carousel
-      class="main__carousel"
-      v-bind="properties"
-    >
-      <slide v-for="slide in slides" :key="slide.id" class="carousel__cell">
-        <g-link :to="slide.link">
-        <g-image
-          :src='slide.img'
-          class="slide__img"
-          fit="contain"
-        >
-        </g-image>
-        <h4 class="slide__title">{{ slide.title }}</h4>
-        <p class="slide__index"> {{ slide.id }} / {{ slides.length }}</p>
-        </g-link>
-      </slide>
-
-    </carousel>
-  </div>
+   <carouselMain />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 68.314">
       <path
         id="stripe-bottom"

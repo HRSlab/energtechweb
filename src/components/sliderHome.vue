@@ -4,7 +4,7 @@
 </VueSlickCarousel>
 </template>
 
-<script>
+<script lang="js">
 import VueSlickCarousel from 'vue-slick-carousel'
 
 

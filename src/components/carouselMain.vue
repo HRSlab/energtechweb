@@ -1,64 +1,75 @@
 <template>
-  <section class="carousel__container">
-  <VueSlickCarousel  v-bind="settings">
-          <g-link to="/category/">
-            <g-image
-              src="~/assets/img/placeholder.svg"
-              class="slide__img"
-              width="500"
-            />
-            <h4 class="slide__title">Category Name</h4>
-            <p class="slide__index">1 / 4</p>
-          </g-link>
-
-          <g-link to="/category/">
-            <g-image
-              src="~/assets/img/placeholder.svg"
-              class="slide__img"
-              width="500"
-            />
-            <h4 class="slide__title">Category Name</h4>
-            <p class="slide__index">2 / 4</p>
-          </g-link>
-
-          <g-link to="/category/">
-            <g-image
-              src="~/assets/img/placeholder.svg"
-              class="slide__img"
-              width="500"
-            />
-            <h4 class="slide__title">Category Name</h4>
-            <p class="slide__index">2 / 4</p>
-          </g-link>
-
-
-          <g-link  to="/category/">
-            <g-image
-              src="~/assets/img/placeholder.svg"
-              class="slide__img"
-              width="500"
-            />
-            <h4 class="slide__title">Category Name</h4>
-            <p class="slide__index">2 / 4</p>
-          </g-link>
-
-          <g-link to="/category/">
-            <g-image
-              src="~/assets/img/placeholder.svg"
-              class="slide__img"
-              width="500"
-            />
-            <h4 class="slide__title">Category Name</h4>
-            <p class="slide__index">2 / 4</p>
-          </g-link>
-
-    </VueSlickCarousel>
-  </section>
+  <VueSlickCarousel v-bind="settings">
+    <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">1 / 6</p>
+      </g-link>
+    </div>
+    <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">2 / 6</p>
+      </g-link>
+    </div>
+    <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">3 / 6</p>
+      </g-link>
+    </div>
+    <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+          width="500"
+          height="340"
+          fit="contain"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">4 / 6</p>
+      </g-link>
+    </div>
+    <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">5 / 6</p>
+      </g-link>
+    </div>
+        <div class="slide__container">
+      <g-link to="/category/">
+        <g-image
+          src="/"
+          class="slide__img"
+        />
+        <h4 class="slide__title">Lorem Ipsum</h4>
+        <p class="slide__index">6 / 6</p>
+      </g-link>
+    </div>
+  </VueSlickCarousel>
 </template>
 
-<script>
-import VueSlickCarousel from "vue-slick-carousel"
-import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+<script lang="js">
+import VueSlickCarousel from "vue-slick-carousel";
+import "vue-slick-carousel/dist/vue-slick-carousel.css";
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
 export default {
   name: "carouselMain",
@@ -67,56 +78,19 @@ export default {
   data() {
     return {
       settings: {
-        dots: false,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnFocus: true,
+        dots: true,
+        arrows: true,
+        centerPadding: '20px',
         focusOnSelect: true,
         infinite: true,
-        arrows: false,
-        centerMode: true,
-        pauseOnHover: true,
-        speed: 500,
         slidesToShow: 3,
         slidesToScroll: 3,
-        touchThreshold: 3
+        speed: 500,
       },
-
-      slides: [
-        {
-          id: 1,
-          title: "Category Name",
-          img: "",
-          link: "/acquedotti/",
-        },
-        {
-          id: 2,
-          title: "Category Name",
-          img: "",
-          link: "/category/",
-        },
-        {
-          id: 3,
-          title: "Category Name",
-          img: "",
-          link: "/category/",
-        },
-        {
-          id: 4,
-          title: "Category Name",
-          img: "",
-          link: "/category/",
-        },
-        {
-          id: 5,
-          title: "Category Name",
-          img: "",
-          link: "/category/",
-        },
-        {
-          id: 6,
-          title: "Category Name",
-          img: "",
-          link: "/category/",
-        },
-      ],
     };
   },
 };
@@ -129,5 +103,80 @@ export default {
  * ----------------------------------------
  */
 
+.slick-slider {
+  position: relative;
+  background-color: white;
+  max-height: 580px;
+  padding: 3% 0;
+}
+
+.slick-slide {
+ /* border: 1px solid red; */
+  margin: 0 20px;
+}
+
+
+.slick-dots {
+  margin: 2% auto;
+}
+
+
+
+
+.slide__img {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  border: 1px solid rgba(196, 196, 196, 0.1);
+  border-radius: 8px;
+  text-decoration: none;
+  background-image: url("../assets/img/placeholder.svg");
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+
+.slide__img:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.slide__title {
+  position: relative;
+  font-size: 1rem;
+  margin-left: 2%;
+  font-weight: 300;
+  line-height: 1.29;
+  text-align: left;
+  color: var(--color-text);
+  text-transform: uppercase;
+   text-decoration: none;
+}
+
+.slide__title::after {
+  content: " ";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 35%;
+  height: 1px;
+  background-color: #707070;
+}
+
+.slick-slide a {
+  text-decoration: none;
+}
+
+.slide__index {
+  position: relative;
+  font-size: 0.725rem;
+  line-height: 1.2;
+  margin-left: 2%;
+  font-weight: 100;
+  text-align: left;
+  color: var(--color-text);
+  text-decoration: none;
+}
 
 </style>
