@@ -1,5 +1,5 @@
 <template>
-  <Layout class="dark-bg">
+  <Metal >
     <g-image
       class="hero__img dark-bg"
       width="1440"
@@ -24,7 +24,7 @@
       />
     </svg>
 
-    <section class="title__container dark-bg">
+    <section class="title__container metal">
       <h1 class="page__title">{{ page.title }}</h1>
       <p class="text">{{ page.description }}</p>
     </section>
@@ -52,15 +52,16 @@
     </section>
 
     <pageForm class="dark-bg" />
-  </Layout>
+  </Metal>
 </template>
 
 <script>
+import Metal from '~/layouts/Metal.vue';
 import productDescription from "../components/productDescription.vue";
 import otherInfo from "../components/otherInfo.vue";
 import pageForm from "../components/pageForm.vue";
 export default {
-  components: { productDescription, otherInfo, pageForm },
+  components: { Metal, productDescription, otherInfo, pageForm },
   metaInfo: {
     title: "Turbine",
     description: "Turbine Pelton per acquedotti",
@@ -78,6 +79,7 @@ export default {
 </script>
 
 <style scoped>
+
 .dark-bg::after {
   content: "";
   position: absolute;

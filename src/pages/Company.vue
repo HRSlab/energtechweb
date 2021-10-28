@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Metal>
 <div>
 
 <g-image
@@ -27,16 +27,17 @@ src="../assets/img/placeholder.svg" />
 
 
     <pageForm />
-  </Layout>
+  </Metal>
 </template>
 
 <script>
+import Metal from '~/layouts/Metal.vue';
 import productDescription from "../components/productDescription.vue";
 import otherInfo from "../components/otherInfo.vue";
 import pageForm from "../components/pageForm.vue";
 
 export default {
-  components: { productDescription, otherInfo, pageForm },
+  components: { Metal, productDescription, otherInfo, pageForm },
   metaInfo: {
     title: "Azienda",
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "

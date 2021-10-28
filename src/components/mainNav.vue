@@ -1,5 +1,5 @@
 <template>
-  <section class="nav__container">
+  <section class="nav__container mbg2">
     <g-image class="nav__logo" src="../assets/img/logo.png" width="250" />
     <nav class="main__nav">
       <g-link id="nav__link" to="/">Home</g-link>

@@ -1,5 +1,5 @@
 <template>
-    <section class="product__container">
+    <section class="product__container mbg2">
       <div class="title__wrapper">
         <p class="product__category">Category</p>
         <g-link href="#" class="product__title">Product

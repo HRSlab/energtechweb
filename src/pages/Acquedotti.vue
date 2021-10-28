@@ -1,7 +1,7 @@
 <template>
-  <Layout>
+  <Metal>
     <section class="carousel__container">
-<VueSlickCarousel class="main__carousel" v-bind="settings">
+<VueSlickCarousel class="main__carousel" v-bind="settings" style="background: transparent;">
         <div class="carousel__cell">
           <g-link to="/prodhyd080/">
             <g-image
@@ -83,17 +83,18 @@
     </section>
 
     <pageForm />
-  </Layout>
+  </Metal>
 </template>
 
 <script>
-import VueSlickCarousel from 'vue-slick-carousel'
+import Metal from '~/layouts/Metal.vue';
+import VueSlickCarousel from 'vue-slick-carousel';
 import productDescription from "../components/productDescription.vue";
 import otherInfo from "../components/otherInfo.vue";
 import pageForm from "../components/pageForm.vue";
 
 export default {
-  components: { productDescription, otherInfo, VueSlickCarousel, pageForm },
+  components: { Metal, productDescription, otherInfo, VueSlickCarousel, pageForm },
   metaInfo: {
     title: "Acquedotti",
     description:
@@ -138,10 +139,16 @@ export default {
         dots: true,
         focusOnSelect: true,
         infinite: true,
-        speed: 500,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 1500,
+        pauseOnFocus: true,
+        dots: true,
+        arrows: true,
+        speed: 1500,
         slidesToShow: 3,
-        slidesToScroll: 3,
-        touchThreshold: 5,
+        slidesToScroll: 1,
+        touchThreshold: 3,
       },
 
       infos: [

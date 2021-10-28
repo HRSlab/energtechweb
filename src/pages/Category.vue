@@ -1,6 +1,6 @@
 <template>
-  <Layout>
-   <carouselMain />
+  <Metal>
+   <carouselMain style="background: transparent" />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 68.314">
       <path
         id="stripe-bottom"
@@ -36,17 +36,18 @@
     </section>
 
     <pageForm />
-  </Layout>
+  </Metal>
 </template>
 
 <script>
+import Metal from '~/layouts/Metal.vue';
 import carouselMain from "../components/carouselMain.vue";
 import productDescription from "../components/productDescription.vue";
 import otherInfo from "../components/otherInfo.vue";
 import pageForm from "../components/pageForm.vue";
 
 export default {
-  components: { productDescription, otherInfo, carouselMain, pageForm },
+  components: { Metal, productDescription, otherInfo, carouselMain, pageForm },
   metaInfo: {
     title: "CAtegory Page",
     description: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. "

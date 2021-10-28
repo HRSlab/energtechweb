@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Metal>
     <div>
       <g-image
         class="hero__img"
@@ -70,16 +70,17 @@ II controllore elettronico è inoltre dotato di uno strumento a led che indica i
     </section>
 
     <pageForm />
-  </Layout>
+  </Metal>
 </template>
 
 <script>
+import Metal from '~/layouts/Metal.vue';
 import carouselMain from "../components/carouselMain.vue";
 import productDescription from "../components/productDescription.vue";
 import otherInfo from "../components/otherInfo.vue";
 import pageForm from "../components/pageForm.vue";
 export default {
-  components: { productDescription, otherInfo, carouselMain, pageForm },
+  components: { Metal, productDescription, otherInfo, carouselMain, pageForm, Metal },
   metaInfo: {
     title: "HYD080",
     description: "E’ un generatore di energia elettrica azionato dall’acqua di un normale acquedotto."

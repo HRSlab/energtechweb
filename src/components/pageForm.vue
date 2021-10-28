@@ -1,5 +1,5 @@
 <template>
-  <section class="form__container">
+  <section class="form__container metal">
     <h1 class="form__title">Contattaci</h1>
     <div class="form__wrapper" >
     <form
