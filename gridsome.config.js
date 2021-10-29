@@ -5,12 +5,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Energ-Tech',
-  siteDescription: 'Website',
-  siteUrl: 'https://www.gridsome.org',
-  plugins: [ ],
-  icon: {
-    favicon: '../assets/favicon/favicon.ico',
-    touchicon: '../assets/favicon/apple-touch-icon.png'
-  }
+    siteName: 'Energ-Tech',
+    siteDescription: 'Website',
+    siteUrl: 'https://energtech.hrslab.com/',
+    plugins: [],
+    icon: {
+        favicon: '../assets/favicon/favicon.ico',
+        touchicon: '../assets/favicon/apple-touch-icon.png'
+    }
 }
